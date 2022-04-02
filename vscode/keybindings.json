@@ -8,11 +8,11 @@
     "command": "workbench.action.navigateForward"
   },
   {
-    "key": "cmd+j",
+    "key": "cmd+h",
     "command":"cursorLeft"
   },
   {
-    "key": "cmd+k",
+    "key": "cmd+j",
     "command":"cursorDown"
   },
   {
@@ -20,7 +20,7 @@
     "command":"cursorRight"
   },
   {
-    "key": "cmd+i",
+    "key": "cmd+k",
     "command":"cursorUp"
   },
   {
