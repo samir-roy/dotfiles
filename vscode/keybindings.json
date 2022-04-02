@@ -1,0 +1,35 @@
+[
+  {
+    "key": "alt+cmd+left",
+    "command": "workbench.action.navigateBack"
+  },
+  {
+    "key": "alt+cmd+right",
+    "command": "workbench.action.navigateForward"
+  },
+  {
+    "key": "cmd+j",
+    "command":"cursorLeft"
+  },
+  {
+    "key": "cmd+k",
+    "command":"cursorDown"
+  },
+  {
+    "key": "cmd+l",
+    "command":"cursorRight"
+  },
+  {
+    "key": "cmd+i",
+    "command":"cursorUp"
+  },
+  {
+    "key": "cmd+shift+/",
+    "command": "eslint.executeAutofix"
+  },
+  {
+    "key": "cmd+h",
+    "command": "-testing.toggleTestingPeekHistory",
+    "when": "testing.isPeekVisible"
+  }
+]

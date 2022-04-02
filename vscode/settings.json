@@ -1,0 +1,157 @@
+{
+    "diffEditor.renderSideBySide": true,
+    "editor.cursorBlinking": "solid",
+    "editor.fontFamily": "Roboto Mono",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 15,
+    "editor.minimap.maxColumn": 80,
+    "editor.minimap.scale": 3,
+    "editor.minimap.showSlider": "always",
+    "editor.rulers": [120],
+    "editor.tabSize": 2,
+    "editor.unicodeHighlight.allowedCharacters": {"’": true},
+    "emmet.excludeLanguages": ["markdown"],
+    "explorer.confirmDelete": false,
+    "files.autoSave": "onWindowChange",
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "**/.vagrant": true,
+        "**/.vscode": true,
+        "**/.gitignore": true,
+        "build/": true,
+        "bin/": true,
+        ".project": true,
+        ".classpath": true,
+        ".settings": true,
+        ".gradle": true,
+        "**/jslib": true,
+        "includes/lib": true
+    },
+    "files.trimTrailingWhitespace": true,
+    "gitlens.currentLine.enabled": false,
+    "gitlens.codeLens.enabled": false,
+    "gitlens.hovers.avatars": false,
+    "gitlens.hovers.annotations.details": false,
+    "gitlens.hovers.annotations.over": "annotation",
+    "gitlens.hovers.currentLine.details": false,
+    "gitlens.hovers.currentLine.over": "line",
+    "gitlens.hovers.enabled": false,
+    "gitlens.showWhatsNewAfterUpgrades": false,
+    "gitlens.statusBar.reduceFlicker": true,
+    "sqltools.autoOpenSessionFiles": false,
+    "sqltools.useNodeRuntime": true,
+    "php.suggest.basic": false,
+    "php.validate.enable": false,
+    "vim.leader": "\\",
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["j", "j"],
+            "after": ["<Esc>"]
+        },
+    ],
+    "vim.normalModeKeyBindings": [
+        {
+            "before": ["J"],
+            "after": ["2", "5", "j"]
+        },
+        {
+            "before": ["K"],
+            "after": ["2", "5", "k"]
+        },
+        {
+            "before": ["leader", " "],
+            "commands": ["editor.action.revealDefinition"]
+        },
+        {
+            "before": ["leader", "i"],
+            "commands": ["editor.action.showHover"]
+        },
+        {
+            "before": ["leader", "d"],
+            "after": ["\"", "_", "d"]
+        },
+        {
+            "before": ["leader", "b"],
+            "after": ["^"]
+        },
+        {
+            "before": ["leader", "e"],
+            "after": ["$"]
+        },
+        {
+            "before": ["leader", "f"],
+            "after": ["%"]
+        },
+    ],
+    "vim.visualModeKeyBindings": [
+        {
+            "before": ["J"],
+            "after": ["2", "5", "j"]
+        },
+        {
+            "before": ["K"],
+            "after": ["2", "5", "k"]
+        },
+        {
+            "before": ["leader", "b"],
+            "after": ["^"]
+        },
+        {
+            "before": ["leader", "e"],
+            "after": ["$"]
+        },
+        {
+            "before": ["leader", "f"],
+            "after": ["%"]
+        },
+    ],
+    "window.autoDetectColorScheme": false,
+    "window.zoomLevel": -2,
+    "workbench.colorCustomizations": {
+        "activityBar.activeBackground": "#d85cb766",
+        "activityBar.background": "#191922",
+        "badge.background": "#d85cb7",
+        "editor.background": "#191922",
+        "editor.findMatchBackground": "#d85cb7",
+        "editor.findMatchHighlightBackground": "#d85cb744",
+        "editor.lineHighlightBackground": "#000000",
+        "editor.lineHighlightBorder": "#000000",
+        "editor.selectionBackground": "#d85cb744",
+        "editor.selectionHighlightBackground": "#000000",
+        "editor.wordHighlightBackground": "#000000",
+        "editorCursor.background": "#ffffff",
+        "editorCursor.foreground": "#b4649f",
+        "editorGutter.background": "#13131a",
+        "editorIndentGuide.activeBackground": "#d85cb744",
+        "editorIndentGuide.background": "#000000",
+        "editorGroupHeader.tabsBackground": "#191922",
+        "editorRuler.foreground": "#0d0d0f",
+        "input.background": "#000000",
+        "list.inactiveSelectionBackground": "#000000",
+        "minimap.background": "#191922",
+        "minimapSlider.activeBackground": "#d85cb766",
+        "minimapSlider.background": "#d85cb766",
+        "minimapSlider.hoverBackground": "#d85cb766",
+        "scrollbarSlider.activeBackground": "#d85cb7",
+        "scrollbarSlider.hoverBackground": "#d85cb7",
+        "sideBar.background": "#191922",
+        "sideBar.border": "#13131a",
+        "sideBarSectionHeader.background": "#191922",
+        "statusBar.background": "#191922",
+        "statusBar.border": "#13131a",
+        "tab.activeBackground": "#d85cb766",
+        "tab.inactiveBackground": "#191922",
+        "titleBar.activeBackground": "#191922",
+        "titleBar.inactiveBackground": "#191922",
+        "terminal.background": "#191922",
+    },
+    "workbench.colorTheme": "Nord",
+    "workbench.editor.untitled.hint": "hidden",
+    "workbench.preferredDarkColorTheme": "Nord",
+    "workbench.preferredLightColorTheme": "Github Light Theme - Gray",
+}
