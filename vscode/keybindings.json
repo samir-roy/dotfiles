@@ -31,5 +31,20 @@
     "key": "cmd+h",
     "command": "-testing.toggleTestingPeekHistory",
     "when": "testing.isPeekVisible"
+  },
+  {
+    "key": "ctrl+cmd+f",
+    "command": "-workbench.action.toggleFullScreen",
+    "when": "!isIOS"
+  },
+  {
+    "key": "ctrl+cmd+f",
+    "command": "search.action.focusNextSearchResult",
+    "when": "hasSearchResult || inSearchEditor"
+  },
+  {
+    "key": "ctrl+cmd+g",
+    "command": "search.action.focusPreviousSearchResult",
+    "when": "hasSearchResult || inSearchEditor"
   }
 ]
