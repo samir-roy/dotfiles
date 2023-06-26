@@ -196,7 +196,6 @@
   "window.autoDetectColorScheme": false,
   "window.newWindowDimensions": "inherit",
   "window.zoomLevel": -2,
-  "window.newWindowDimensions": "inherit",
   "workbench.colorTheme": "Shinjuku",
   "workbench.editor.untitled.hint": "hidden"
 }
