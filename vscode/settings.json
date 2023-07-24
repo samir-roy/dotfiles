@@ -1,6 +1,7 @@
 {
   "diffEditor.renderSideBySide": true,
   "editor.cursorBlinking": "solid",
+  "editor.cursorSurroundingLines": 12,
   "editor.fontFamily": "Roboto Mono",
   "editor.fontLigatures": true,
   "editor.fontSize": 15,
@@ -19,6 +20,7 @@
   ],
   "emmet.showExpandedAbbreviation": "never",
   "explorer.confirmDelete": false,
+  "extensions.ignoreRecommendations": true,
   "files.autoSave": "onWindowChange",
   "files.exclude": {
     "**/.git": true,
@@ -54,6 +56,7 @@
   "sqltools.useNodeRuntime": true,
   "php.suggest.basic": false,
   "php.validate.enable": false,
+  "terminal.integrated.fontFamily": "SF Mono",
   "vim.leader": "\\",
   "vim.insertModeKeyBindings": [
     {
@@ -74,7 +77,9 @@
       "after": [
         "2",
         "5",
-        "j"
+        "j",
+        "z",
+        "z"
       ]
     },
     {
@@ -84,7 +89,9 @@
       "after": [
         "2",
         "5",
-        "k"
+        "k",
+        "z",
+        "z"
       ]
     },
     {
@@ -195,7 +202,8 @@
   ],
   "window.autoDetectColorScheme": false,
   "window.newWindowDimensions": "inherit",
-  "window.zoomLevel": -2,
+  "window.zoomLevel": -1,
   "workbench.colorTheme": "Shinjuku",
-  "workbench.editor.untitled.hint": "hidden"
+  "workbench.editor.untitled.hint": "hidden",
+  "workbench.startupEditor": "none"
 }
