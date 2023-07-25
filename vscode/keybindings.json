@@ -45,7 +45,8 @@
   },
   {
     "key": "cmd+h",
-    "command":"cursorLeft"
+    "command": "cursorLeft",
+    "when": "editorTextFocus"
   },
   {
     "key": "cmd+j",
