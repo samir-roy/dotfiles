@@ -201,9 +201,11 @@
     }
   ],
   "window.autoDetectColorScheme": false,
+  "window.commandCenter": false,
   "window.newWindowDimensions": "inherit",
   "window.zoomLevel": -1,
   "workbench.colorTheme": "Shinjuku",
   "workbench.editor.untitled.hint": "hidden",
+  "workbench.layoutControl.enabled": false,
   "workbench.startupEditor": "none"
 }
