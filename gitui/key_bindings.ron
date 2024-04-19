@@ -1,18 +1,18 @@
 (
-    focus_right: Some(( code: Char('l'), modifiers: ( bits: 0,),)),
-    focus_left: Some(( code: Char('h'), modifiers: ( bits: 0,),)),
-    focus_above: Some(( code: Char('k'), modifiers: ( bits: 0,),)),
-    focus_below: Some(( code: Char('j'), modifiers: ( bits: 0,),)),
+    focus_right: Some(( code: Char('l'), modifiers: "")),
+    focus_left: Some(( code: Char('h'), modifiers: "")),
+    focus_above: Some(( code: Char('k'), modifiers: "")),
+    focus_below: Some(( code: Char('j'), modifiers: "")),
     
-    move_left: Some(( code: Char('h'), modifiers: ( bits: 0,),)),
-    move_right: Some(( code: Char('l'), modifiers: ( bits: 0,),)),
-    move_up: Some(( code: Char('k'), modifiers: ( bits: 0,),)),
-    move_down: Some(( code: Char('j'), modifiers: ( bits: 0,),)),
-    page_up: Some(( code: Char('K'), modifiers: ( bits: 1,),)),
-    page_down: Some(( code: Char('J'), modifiers: ( bits: 1,),)),
+    move_left: Some(( code: Char('h'), modifiers: "")),
+    move_right: Some(( code: Char('l'), modifiers: "")),
+    move_up: Some(( code: Char('k'), modifiers: "")),
+    move_down: Some(( code: Char('j'), modifiers: "")),
+    page_up: Some(( code: Char('K'), modifiers: "SHIFT")),
+    page_down: Some(( code: Char('J'), modifiers: "SHIFT")),
 
-    stash_open: Some(( code: Char('l'), modifiers: ( bits: 0,),)),
+    stash_open: Some(( code: Char('l'), modifiers: "")),
 
-    open_help: Some(( code: F(1), modifiers: ( bits: 0,),)),
+    open_help: Some(( code: F(1), modifiers: "")),
 )
 
