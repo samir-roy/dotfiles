@@ -204,7 +204,6 @@
   "window.commandCenter": false,
   "window.newWindowDimensions": "inherit",
   "workbench.colorTheme": "Shinjuku",
-  "workbench.editor.untitled.hint": "hidden",
   "workbench.layoutControl.enabled": false,
   "workbench.startupEditor": "none",
   "window.zoomLevel": -1,
