@@ -1,0 +1,56 @@
+[window]
+dimensions = { columns = 132, lines = 64 }
+padding = { x = 128, y = 96 }
+position = { x = 1024, y = 0 }
+decorations = "None"
+
+
+[colors]
+cursor = { text = "#000000", cursor = "#34e970" }
+
+
+[colors.normal]
+black = "#16161a"
+red = "#e6483c"
+green = "#00bc5e"
+yellow = "#fff56a"
+blue = "#01a0e4"
+magenta = "#ff5f87"
+cyan = "#8ee3ff"
+white = "#bfbbbb"
+
+
+[colors.bright]
+black = "#5c5855"
+red = "#f94a3d"
+green = "#00c964"
+yellow = "#fff47d"
+blue = "#01a0e4"
+magenta = "#ff799a"
+cyan = "#b5e4f4"
+white = "#f7f7f7"
+
+
+[colors.primary]
+background = "#16161a"
+foreground = "#c7c7c7"
+
+
+[font]
+size = 10.0
+normal.family = "Maple Mono"
+normal.style = "Bold"
+bold.family = "Maple Mono"
+bold.style = "Regular"
+italic.family = "Maple Mono"
+italic.style = "BoldItalic"
+bold_italic.family = "Maple Mono"
+bold_italic.style = "Italic"
+offset = { x = 0, y = 1 }
+
+[bell]
+duration = 100
+color = "#000000"
+
+[mouse]
+hide_when_typing = true
