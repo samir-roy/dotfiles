@@ -18,3 +18,6 @@ PROMPT='%B%F{240}%2~%f%b %# '
 # remap up/down arrow keys
 bindkey '^[[A' up-line-or-search
 bindkey '^[[B' down-line-or-search
+
+# set neovim as default editor
+export EDITOR=nvim
