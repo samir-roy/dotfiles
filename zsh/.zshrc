@@ -6,6 +6,9 @@ export NVM_DIR="$HOME/.nvm"
 # clear buffer on clear command
 alias clear="clear && printf '\e[3J'"
 
+# alias for neovim
+alias vi="nvim"
+
 # enable command line colors
 export CLICOLOR=1
 
