@@ -54,3 +54,20 @@ color = "#000000"
 
 [mouse]
 hide_when_typing = true
+
+[keyboard]
+bindings=[
+{ key = "0", mods = "Command", chars = "\u00020" },
+{ key = "1", mods = "Command", chars = "\u00021" },
+{ key = "2", mods = "Command", chars = "\u00022" },
+{ key = "3", mods = "Command", chars = "\u00023" },
+{ key = "4", mods = "Command", chars = "\u00024" },
+{ key = "5", mods = "Command", chars = "\u00025" },
+{ key = "6", mods = "Command", chars = "\u00026" },
+{ key = "7", mods = "Command", chars = "\u00027" },
+{ key = "8", mods = "Command", chars = "\u00028" },
+{ key = "9", mods = "Command", chars = "\u00029" },
+{ key = "]", mods = "Command", chars = "\u0002n" },
+{ key = "[", mods = "Command", chars = "\u0002p" },
+{ key = "l", mods = "Command", chars = "\u0002l" },
+]
