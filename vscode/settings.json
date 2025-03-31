@@ -57,7 +57,7 @@
   "php.suggest.basic": false,
   "php.validate.enable": false,
   "terminal.integrated.fontFamily": "SF Mono",
-  "vim.leader": "\\",
+  "vim.leader": " ",
   "vim.insertModeKeyBindings": [
     {
       "before": [
@@ -67,29 +67,48 @@
       "after": [
         "<Esc>"
       ]
+    },
+    {
+      "before": [
+        "<C-h>"
+      ],
+      "after": [
+        "<Left>"
+      ]
+    },
+    {
+      "before": [
+        "<C-j>"
+      ],
+      "after": [
+        "<Down>"
+      ]
+    },
+    {
+      "before": [
+        "<C-k>"
+      ],
+      "after": [
+        "<Up>"
+      ]
+    },
+    {
+      "before": [
+        "<C-l>"
+      ],
+      "after": [
+        "<Right>"
+      ]
     }
   ],
   "vim.normalModeKeyBindings": [
     {
       "before": [
-        "J"
+        "leader",
+        "j"
       ],
       "after": [
-        "2",
-        "5",
-        "j",
-        "z",
-        "z"
-      ]
-    },
-    {
-      "before": [
-        "K"
-      ],
-      "after": [
-        "2",
-        "5",
-        "k",
+        "<C-d>",
         "z",
         "z"
       ]
@@ -97,10 +116,149 @@
     {
       "before": [
         "leader",
-        " "
+        "k"
+      ],
+      "after": [
+        "<C-u>",
+        "z",
+        "z"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "b"
+      ],
+      "after": [
+        "^"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "e"
+      ],
+      "after": [
+        "$"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "m"
+      ],
+      "after": [
+        "%"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "w"
       ],
       "commands": [
-        "editor.action.revealDefinition"
+        ":wa"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "W"
+      ],
+      "commands": [
+        ":w"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "y"
+      ],
+      "after": [
+        "\"+y"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "Y"
+      ],
+      "after": [
+        "\"+Y"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "P"
+      ],
+      "after": [
+        "\"_dp"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "n"
+      ],
+      "after": [
+        "*",
+        "N"
+      ]
+    },
+    {
+      "before": [
+        "[",
+        "["
+      ],
+      "after": [
+        "<C-o>"
+      ]
+    },
+    {
+      "before": [
+        "]",
+        "]"
+      ],
+      "after": [
+        "<C-i>"
+      ]
+    },
+    {
+      "before": [
+        "n"
+      ],
+      "after": [
+        "n",
+        "z",
+        "z"
+      ]
+    },
+    {
+      "before": [
+        "N"
+      ],
+      "after": [
+        "N",
+        "z",
+        "z"
+      ]
+    },
+    {
+      "before": [
+        "?"
+      ],
+      "commands": [
+        ":noh"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "r"
+      ],
+      "commands": [
+        "editor.action.rename"
       ]
     },
     {
@@ -115,61 +273,318 @@
     {
       "before": [
         "leader",
+        "a"
+      ],
+      "commands": [
+        "editor.action.quickFix"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "g"
+      ],
+      "commands": [
+        "editor.action.revealDefinition"
+      ]
+    },
+    {
+      "before": [
+        "leader",
         "d"
       ],
-      "after": [
-        "\"",
-        "_",
-        "d"
+      "commands": [
+        "editor.action.showHover"
       ]
     },
     {
       "before": [
         "leader",
-        "b"
+        "."
       ],
-      "after": [
-        "^"
+      "commands": [
+        "editor.action.formatDocument"
       ]
     },
     {
       "before": [
         "leader",
-        "e"
+        "x"
       ],
-      "after": [
-        "$"
+      "commands": [
+        "workbench.view.explorer"
       ]
     },
     {
       "before": [
         "leader",
+        "/"
+      ],
+      "commands": [
+        "editor.action.commentLine"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "f",
         "f"
       ],
-      "after": [
-        "%"
+      "commands": [
+        "workbench.action.findInFiles"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "p"
+      ],
+      "commands": [
+        "workbench.action.quickOpen"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "1"
+      ],
+      "commands": [
+        "workbench.action.openEditorAtIndex1"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "2"
+      ],
+      "commands": [
+        "workbench.action.openEditorAtIndex2"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "3"
+      ],
+      "commands": [
+        "workbench.action.openEditorAtIndex3"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "4"
+      ],
+      "commands": [
+        "workbench.action.openEditorAtIndex4"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "5"
+      ],
+      "commands": [
+        "workbench.action.openEditorAtIndex5"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "6"
+      ],
+      "commands": [
+        "workbench.action.openEditorAtIndex6"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "7"
+      ],
+      "commands": [
+        "workbench.action.openEditorAtIndex7"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "8"
+      ],
+      "commands": [
+        "workbench.action.openEditorAtIndex8"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "9"
+      ],
+      "commands": [
+        "workbench.action.openEditorAtIndex9"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "["
+      ],
+      "commands": [
+        ":bN"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "]"
+      ],
+      "commands": [
+        ":bn"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "f",
+        "c"
+      ],
+      "commands": [
+        ":bd"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "l"
+      ],
+      "commands": [
+        "workbench.action.navigateBack"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "f",
+        "g"
+      ],
+      "commands": [
+        "workbench.action.quickOpen"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "f",
+        "p"
+      ],
+      "commands": [
+        "workbench.action.quickOpen"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "f",
+        "w"
+      ],
+      "commands": [
+        "workbench.action.findInFiles"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "f",
+        "s"
+      ],
+      "commands": [
+        "workbench.action.findInFiles"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "f",
+        "k"
+      ],
+      "commands": [
+        "workbench.action.search.toggleQueryDetails"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "f",
+        "b"
+      ],
+      "commands": [
+        "workbench.action.showAllEditors"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "t"
+      ],
+      "commands": [
+        "workbench.action.showAllEditors"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "f",
+        "d"
+      ],
+      "commands": [
+        "workbench.actions.view.problems"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "s"
+      ],
+      "commands": [
+        "workbench.action.findInFiles"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "s",
+        "s"
+      ],
+      "commands": [
+        "workbench.action.findInFiles"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "s",
+        "w"
+      ],
+      "commands": [
+        "workbench.action.findInFiles"
       ]
     }
   ],
   "vim.visualModeKeyBindings": [
     {
       "before": [
-        "J"
+        "L"
       ],
-      "after": [
-        "2",
-        "5",
-        "j"
+      "commands": [
+        "editor.action.moveLinesDownAction"
       ]
     },
     {
       "before": [
-        "K"
+        "H"
       ],
-      "after": [
-        "2",
-        "5",
-        "k"
+      "commands": [
+        "editor.action.moveLinesUpAction"
       ]
     },
     {
@@ -193,10 +608,68 @@
     {
       "before": [
         "leader",
-        "f"
+        "m"
       ],
       "after": [
         "%"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "y"
+      ],
+      "after": [
+        "\"+y"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "/"
+      ],
+      "commands": [
+        "editor.action.commentLine"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "j"
+      ],
+      "after": [
+        "<C-d>",
+        "z",
+        "z"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "k"
+      ],
+      "after": [
+        "<C-u>",
+        "z",
+        "z"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "."
+      ],
+      "commands": [
+        "editor.action.formatSelection"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "P"
+      ],
+      "after": [
+        "\"_dp"
       ]
     }
   ],

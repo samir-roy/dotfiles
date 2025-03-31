@@ -44,11 +44,6 @@
     "command": "workbench.action.openEditorAtIndex9"
   },
   {
-    "key": "cmd+h",
-    "command": "cursorLeft",
-    "when": "editorTextFocus"
-  },
-  {
     "key": "cmd+j",
     "command":"cursorDown"
   },
@@ -63,11 +58,6 @@
   {
     "key": "cmd+shift+/",
     "command": "eslint.executeAutofix"
-  },
-  {
-    "key": "cmd+h",
-    "command": "-testing.toggleTestingPeekHistory",
-    "when": "testing.isPeekVisible"
   },
   {
     "key": "ctrl+cmd+f",
