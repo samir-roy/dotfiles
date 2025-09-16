@@ -1,0 +1,66 @@
+# Ghostty Config ~/Library/Application Support/com.mitchellh.ghostty/config
+
+font-family = Maple Mono
+font-style-italic = false
+font-style-bold-italic = false
+font-size = 10
+font-style = bold
+font-style-bold = regular
+
+cursor-style = block
+cursor-style-blink = false
+cursor-text = #000000
+cursor-color = #34e970
+
+background = #000000
+foreground = #c7c7c7
+selection-foreground = #000000
+selection-background = #fff56a
+
+palette = 0=#16161a
+palette = 1=#e6483c
+palette = 2=#00bc5e
+palette = 3=#fff56a
+palette = 4=#01a0e4
+palette = 5=#ff5f87
+palette = 6=#8ee3ff
+palette = 7=#bfbbbb
+palette = 8=#5c5855
+palette = 9=#f94a3d
+palette = 10=#00c964
+palette = 11=#fff47d
+palette = 12=#01a0e4
+palette = 13=#ff799a
+palette = 14=#b5e4f4
+palette = 15=#f7f7f7
+
+window-padding-x = 20
+window-padding-y = 20
+window-padding-balance = true
+window-width = 132
+window-height = 64
+
+confirm-close-surface = false
+
+macos-titlebar-style = hidden
+macos-icon = custom-style
+macos-icon-frame = plastic
+macos-icon-ghost-color = #666666
+macos-icon-screen-color = #111111
+
+keybind = cmd+0=text:\x020
+keybind = cmd+g>0=text:\x020
+keybind = cmd+g>1=text:\x021
+keybind = cmd+g>2=text:\x022
+keybind = cmd+g>3=text:\x023
+keybind = cmd+g>4=text:\x024
+keybind = cmd+g>5=text:\x025
+keybind = cmd+g>6=text:\x026
+keybind = cmd+g>7=text:\x027
+keybind = cmd+g>8=text:\x028
+keybind = cmd+g>9=text:\x029
+keybind = cmd+t=text:\x02c
+keybind = cmd+n=text:\x02c
+keybind = cmd+l=text:\x02l
+keybind = cmd+j=text:\x02p
+keybind = cmd+k=text:\x02n
