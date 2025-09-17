@@ -48,6 +48,16 @@ macos-icon-frame = plastic
 macos-icon-ghost-color = #666666
 macos-icon-screen-color = #111111
 
+keybind = alt+0=text:\x020
+keybind = alt+1=text:\x021
+keybind = alt+2=text:\x022
+keybind = alt+3=text:\x023
+keybind = alt+4=text:\x024
+keybind = alt+5=text:\x025
+keybind = alt+6=text:\x026
+keybind = alt+7=text:\x027
+keybind = alt+8=text:\x028
+keybind = alt+9=text:\x029
 keybind = cmd+0=text:\x020
 keybind = cmd+g>0=text:\x020
 keybind = cmd+g>1=text:\x021
