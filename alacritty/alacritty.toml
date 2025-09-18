@@ -7,6 +7,7 @@ dimensions = { columns = 132, lines = 64 }
 padding = { x = 128, y = 96 }
 position = { x = 1024, y = 0 }
 decorations = "None"
+opacity = 0.9999999
 
 [colors]
 cursor = { text = "#000000", cursor = "#34e970" }
@@ -66,8 +67,20 @@ bindings=[
 { key = "7", mods = "Command", chars = "\u00027" },
 { key = "8", mods = "Command", chars = "\u00028" },
 { key = "9", mods = "Command", chars = "\u00029" },
+{ key = "0", mods = "Alt", chars = "\u00020" },
+{ key = "1", mods = "Alt", chars = "\u00021" },
+{ key = "2", mods = "Alt", chars = "\u00022" },
+{ key = "3", mods = "Alt", chars = "\u00023" },
+{ key = "4", mods = "Alt", chars = "\u00024" },
+{ key = "5", mods = "Alt", chars = "\u00025" },
+{ key = "6", mods = "Alt", chars = "\u00026" },
+{ key = "7", mods = "Alt", chars = "\u00027" },
+{ key = "8", mods = "Alt", chars = "\u00028" },
+{ key = "9", mods = "Alt", chars = "\u00029" },
 { key = "]", mods = "Command", chars = "\u0002n" },
 { key = "[", mods = "Command", chars = "\u0002p" },
+{ key = "k", mods = "Command", chars = "\u0002n" },
+{ key = "j", mods = "Command", chars = "\u0002p" },
 { key = "l", mods = "Command", chars = "\u0002l" },
 { key = "n", mods = "Command", chars = "\u0002c" },
 { key = "t", mods = "Command", chars = "\u0002c" },
