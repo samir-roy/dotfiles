@@ -4,10 +4,9 @@ args = ["new-session", "-A", "-s", "main",]
 
 [window]
 dimensions = { columns = 132, lines = 64 }
-padding = { x = 128, y = 96 }
-position = { x = 1024, y = 0 }
-decorations = "None"
-opacity = 0.9999999
+padding = { x = 25, y = 25 }
+position = { x = 1024, y = 72 }
+decorations = "Buttonless"
 
 [colors]
 cursor = { text = "#000000", cursor = "#34e970" }
