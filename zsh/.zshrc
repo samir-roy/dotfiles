@@ -9,6 +9,12 @@ alias clear="clear && printf '\e[3J'"
 # alias for neovim
 alias vi="nvim"
 
+# tmux alias for main session
+alias muxme="/opt/homebrew/bin/tmux new-session -A -s main"
+
+# l alias for ls -al
+alias l="ls -alh"
+
 # enable command line colors
 export CLICOLOR=1
 
@@ -16,7 +22,14 @@ export CLICOLOR=1
 autoload -Uz compinit && compinit
 
 # configure prompt
-PROMPT='%B%F{240}%2~%f%b %# '
+PROMPT='%F{240}%@%f %B%F{240}%2~%f%b %# '
+
+# update time in prompt on keystroke
+update-prompt-on-keystroke() {
+  zle reset-prompt
+  zle .accept-line
+}
+zle -N accept-line update-prompt-on-keystroke
 
 # remap up/down arrow keys
 bindkey '^[[A' up-line-or-search
@@ -24,3 +37,36 @@ bindkey '^[[B' down-line-or-search
 
 # set neovim as default editor
 export EDITOR=nvim
+
+# switch node versions when entering a directory
+# autoload -U add-zsh-hook
+# load-nvmrc() {
+#   local node_version="$(nvm version)"
+#   local nvmrc_path="$(nvm_find_nvmrc)"
+
+#   if [[ -n "$nvmrc_path" ]]; then
+#     local nvmrc_node_version="$(nvm version $(cat "$nvmrc_path"))"
+
+#     if [[ "$nvmrc_node_version" != "$node_version" ]]; then
+#       nvm use
+#     fi
+#   elif [[ "$node_version" != "$(nvm version default)" ]]; then
+#     echo "Reverting to nvm default version"
+#     nvm use default
+#   fi
+# }
+# add-zsh-hook chpwd load-nvmrc
+
+# check node version before running npm if .nvmrc exists
+npm() {
+  if [[ -f .nvmrc ]]; then
+    local required_version=$(cat .nvmrc | tr -d '[:space:]' | sed 's/^v//' | cut -d. -f1)
+    local current_version=$(node --version | sed 's/^v//' | cut -d. -f1)
+
+    if [[ "$current_version" != "$required_version" ]]; then
+      echo "⚠️ Error: .nvmrc specifies Node $required_version but you're on $(node --version)"
+      return 1
+    fi
+  fi
+  command npm "$@"
+}
