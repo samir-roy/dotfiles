@@ -31,6 +31,27 @@ update-prompt-on-keystroke() {
 }
 zle -N accept-line update-prompt-on-keystroke
 
+# enable terminal focus tracking
+autoload -U add-zsh-hook
+add-zsh-hook precmd () { printf '\e[?1004h' }
+
+# update prompt on focus in
+focus-in-update-prompt() {
+  zle reset-prompt
+}
+zle -N focus-in-update-prompt
+bindkey '\e[I' focus-in-update-prompt
+
+# do nothing on focus out
+focus-out-noop() { }
+zle -N focus-out-noop
+bindkey '\e[O' focus-out-noop
+
+# disable focus tracking on exit to avoid leaking escape codes
+zshexit() {
+  printf '\e[?1004l'
+}
+
 # remap up/down arrow keys
 bindkey '^[[A' up-line-or-search
 bindkey '^[[B' down-line-or-search
