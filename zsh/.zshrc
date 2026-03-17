@@ -9,8 +9,8 @@ alias clear="clear && printf '\e[3J'"
 # alias for neovim
 alias vi="nvim"
 
-# tmux alias for main session
-alias muxme="/opt/homebrew/bin/tmux new-session -A -s main"
+# tmux alias for session (default: main)
+mux() { /opt/homebrew/bin/tmux new-session -A -s "${1:-main}"; }
 
 # l alias for ls -al
 alias l="ls -alh"
