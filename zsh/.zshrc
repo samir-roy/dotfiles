@@ -34,6 +34,7 @@ zle -N accept-line update-prompt-on-keystroke
 # enable terminal focus tracking
 autoload -U add-zsh-hook
 add-zsh-hook precmd () { printf '\e[?1004h' }
+add-zsh-hook preexec () { printf '\e[?1004l' }
 
 # update prompt on focus in
 focus-in-update-prompt() {
